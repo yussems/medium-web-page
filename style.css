@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,300&display=swap");
+
+:root {
+  --font: "Montserrat", sans-serif;
+}
+
+* body {
+  width: 1100px;
+  margin: auto;
+  text-decoration: none;
+  list-style: none;
+}
+p {
+  line-height: 200%;
+  font-size: 21px;
+}
+header {
+  min-height: 115px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+}
+.sol {
+  width: 33%;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sol span {
+  font-weight: bold;
+}
+.sol li a {
+  text-decoration: none;
+  color: grey;
+}
+.sol button {
+  border: 1px solid green;
+  color: green;
+  background-color: white;
+  padding: 10px;
+  border-radius: 4px;
+}
+.sag {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sag li a svg {
+  color: grey;
+  width: 20px;
+  height: 20px;
+}
+.sag button {
+  border: 1px solid green;
+  color: green;
+  background-color: white;
+  padding: 10px;
+  border-radius: 4px;
+}
+.main {
+  display: flex;
+  margin-top: 50px;
+}
+.side {
+  width: 250px;
+  display: inline-block;
+}
+.fixed {
+  position: fixed;
+}
+.side img {
+  width: 135px;
+  height: 135px;
+}
+.content {
+  width: 800px;
+  display: inline-block;
+}
+.content .tarih {
+  color: grey;
+  margin-top: 0;
+}
+.content h2 {
+  font-weight: bold;
+}
+footer {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  margin-bottom: 100px;
+}
+.footerl {
+  display: flex;
+  margin-left: 250px;
+}
+.footerl li {
+  margin: 10px;
+}
+.footerl li a svg {
+  width: 25px;
+  height: 25px;
+  color: rgb(73, 69, 69);
+}
+
+.footerr {
+  display: flex;
+}
+.footerr li {
+  margin: 10px;
+}
+.footerr li a svg {
+  width: 25px;
+  height: 25px;
+  color: rgb(73, 69, 69);
+}

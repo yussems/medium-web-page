@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jquery</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="style.css" />
+
+
+</head>
+
+<body>
+  <header>
+    <div class="sol">
+      <span>Zafer Ayan</span>
+      <li><a href="#">845 Followers</a></li>
+      <li><a href="#">About</a></li>
+      <button>Follow</button>
+    </div>
+    <div class="sag">
+      <li><a href="#"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis-h"
+            class="svg-inline--fa fa-ellipsis-h fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512">
+            <path fill="currentColor"
+              d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z">
+            </path>
+          </svg></a></li>
+      <li><a href="#"> <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search"
+            class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512">
+            <path fill="currentColor"
+              d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
+            </path>
+          </svg></a></li>
+      <button>Upgrade</button>
+      <li><a href="#"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="medium-m"
+            class="svg-inline--fa fa-medium-m fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512">
+            <path fill="currentColor"
+              d="M71.5 142.3c.6-5.9-1.7-11.8-6.1-15.8L20.3 72.1V64h140.2l108.4 237.7L364.2 64h133.7v8.1l-38.6 37c-3.3 2.5-5 6.7-4.3 10.8v272c-.7 4.1 1 8.3 4.3 10.8l37.7 37v8.1H307.3v-8.1l39.1-37.9c3.8-3.8 3.8-5 3.8-10.8V171.2L241.5 447.1h-14.7L100.4 171.2v184.9c-1.1 7.8 1.5 15.6 7 21.2l50.8 61.6v8.1h-144v-8L65 377.3c5.4-5.6 7.9-13.5 6.5-21.2V142.3z">
+            </path>
+          </svg></a></li>
+    </div>
+  </header>
+  <div class="main">
+    <div class="side">
+      <div class="fixed">
+        <img src="https://miro.medium.com/fit/c/262/262/2*0NWpl6Ya9yS1j98EZMd4Ow.jpeg" alt="Zafer">
+        <h3>Zafer Ayan</h3>
+      </div>
+    </div>
+    <div class="content">
+      <p class="tarih">Dec 11,2020</p>
+      <h2>Provisioning Profile Nedir?</h2>
+      <p>iOS uygulaması geliştiren herkesin hayatında en az bir kez karşılaştığı terimlerden biridir. Apple tarafından
+        belirlenen tanıma bir bakalım:</p>
+      <p>Provisioning profile, yazılımcıları ve cihazları yetkilendirilmiş bir iPhone Development Team’e bağlayan ve
+        ilgili cihazların test için kullanımını etkinleştiren, dijital varlıklardan oluşan bir koleksiyonudur.</p>
+      <p>Buradan da anlaşılacağı gibi profile, yazılımcıların hangi cihazlar üzerinde, hangi uygulamayı debug edeceğinin
+        belirlenmesini sağlamaktadır.</p>
+      <h3>Peki neden Provisioning Profile’a ihtiyacımız var?</h3>
+      <p>Android’de olduğu gibi apk atarak uygulama yükleme durumu iOS uygulamalarının geliştiriminde <strong>mümkün
+          değildir.</strong>
+        Çünkü Apple’ın güvenlik politikaları gereği, ilgili uygulama Apple tarafından <strong>mzalanmış
+          olmalıdır.</strong>
+        i Fakat,
+        uygulama geliştirimi yapılırken, Apple’a sunmadan önce cihazlarda da test/debug edilmesi gereklidir. Bu nedenle
+        cihaz ve geliştirim hesabını birbirine bağlayacak bir sistem/dosya gereklidir. Bu dosyaya <strong>Provisioning
+          Profile</strong>
+        dosyası denir. Geliştirim süresince, uygulamayı hangi cihazların çalıştırabileceğine ve bu uygulamanın, hangi
+        uygulama servislerine (Push NotificationNFC vs.) erişebileceği profile dosyası tarafından belirlenebilir. Apple
+        hesabından indirilen provisioning profile dosyası app bundle içerisine entegre edildiğinde, uygulama artık
+        <strong> imzalanmış (code-signed)</strong>
+        hale gelir. Provisioning profile dosyasında, test edilmesi istenen her bir cihaz dahil
+        edilmelidir. …
+      </p>
+
+    </div>
+
+  </div>
+  <footer>
+    <div class="footerl">
+      <li><a href="#"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hands-wash"
+            class="svg-inline--fa fa-hands-wash fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512">
+            <path fill="currentColor"
+              d="M496,224a48,48,0,1,0-48-48A48,48,0,0,0,496,224ZM311.47,178.45A56.77,56.77,0,0,1,328,176a56,56,0,0,1,19,3.49l15.35-48.61A24,24,0,0,0,342,99.74c-11.53-1.35-22.21,6.44-25.71,17.51l-20.9,66.17ZM93.65,386.33c.8-.19,1.54-.54,2.35-.71V359.93a156,156,0,0,1,107.06-148l73.7-22.76L310.92,81.05a24,24,0,0,0-20.33-31.11c-11.53-1.34-22.22,6.45-25.72,17.52L231.42,173.88a8,8,0,0,1-15.26-4.83L259.53,31.26A24,24,0,0,0,239.2.15C227.67-1.19,217,6.6,213.49,17.66L165.56,169.37a8,8,0,1,1-15.26-4.82l38.56-122a24,24,0,0,0-20.33-31.11C157,10,146.32,17.83,142.82,28.9l-60,189.85L80.76,168.7A24,24,0,0,0,56.9,144.55c-13.23-.05-24.72,10.54-24.9,23.86V281.14A123.69,123.69,0,0,0,93.65,386.33ZM519.1,336H360a8,8,0,0,1,0-16H488a24,24,0,0,0,23.54-28.76C509.35,279.84,498.71,272,487.1,272H288l47.09-17.06a24,24,0,0,0-14.18-45.88L213.19,242.31A123.88,123.88,0,0,0,128,360v25.65a79.78,79.78,0,0,1,58,108.63A118.9,118.9,0,0,0,248,512H456a24,24,0,0,0,23.54-28.76C477.35,471.84,466.71,464,455.1,464H360a8,8,0,0,1,0-16H488a24,24,0,0,0,23.54-28.76C509.35,407.84,498.71,400,487.1,400H360a8,8,0,0,1,0-16H520a24,24,0,0,0,23.54-28.76C541.35,343.84,530.71,336,519.1,336ZM416,64a32,32,0,1,0-32-32A32,32,0,0,0,416,64ZM112,416a48,48,0,1,0,48,48A48,48,0,0,0,112,416Z">
+            </path>
+          </svg></a></li>
+      <li><a href="#"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="comment"
+            class="svg-inline--fa fa-comment fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512">
+            <path fill="currentColor"
+              d="M256 32C114.6 32 0 125.1 0 240c0 47.6 19.9 91.2 52.9 126.3C38 405.7 7 439.1 6.5 439.5c-6.6 7-8.4 17.2-4.6 26S14.4 480 24 480c61.5 0 110-25.7 139.1-46.3C192 442.8 223.2 448 256 448c141.4 0 256-93.1 256-208S397.4 32 256 32zm0 368c-26.7 0-53.1-4.1-78.4-12.1l-22.7-7.2-19.5 13.8c-14.3 10.1-33.9 21.4-57.5 29 7.3-12.1 14.4-25.7 19.9-40.2l10.6-28.1-20.6-21.8C69.7 314.1 48 282.2 48 240c0-88.2 93.3-160 208-160s208 71.8 208 160-93.3 160-208 160z">
+            </path>
+          </svg></a></li>
+    </div>
+    <div class="footerr">
+      <li><a href="#"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="clipboard"
+            class="svg-inline--fa fa-clipboard fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512">
+            <path fill="currentColor"
+              d="M336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 40c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24zm144 418c0 3.3-2.7 6-6 6H54c-3.3 0-6-2.7-6-6V118c0-3.3 2.7-6 6-6h42v36c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-36h42c3.3 0 6 2.7 6 6z">
+            </path>
+          </svg></a></li>
+      <li><a href="#"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="bookmark"
+            class="svg-inline--fa fa-bookmark fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512">
+            <path fill="currentColor"
+              d="M336 0H48C21.49 0 0 21.49 0 48v464l192-112 192 112V48c0-26.51-21.49-48-48-48zm0 428.43l-144-84-144 84V54a6 6 0 0 1 6-6h276c3.314 0 6 2.683 6 5.996V428.43z">
+            </path>
+          </svg></a></li>
+    </div>
+  </footer>
+
+</body>
+
+</html>
